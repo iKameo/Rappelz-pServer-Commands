@@ -1,0 +1,32 @@
+USE Arcadia
+GO
+UPDATE dbo.MarketResource
+SET price_ratio=1.000
+WHERE price_ratio>0.0000
+
+_________________________
+
+Use Arcadia
+GO
+Update itemresource
+set price = 4500000
+where ID = XXXXXX
+
+_________________________
+
+USE Arcadia
+SELECT * FROM dbo.ItemResource
+WHERE id = XXXXXX
+
+_________________________
+
+UPDATE dbo.MonsterResource
+SET taming_percentage = taming_percentage * 2
+
+_________________________
+
+USE Arcadia
+SELECT * FROM dbo.MarketResource
+WHERE name LIKE '%NPC%'
+
+_________________________
