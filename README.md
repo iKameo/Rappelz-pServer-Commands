@@ -55,3 +55,10 @@ Teleport "Name" to the Labyrinth
 **//regenerate, 22000081,1**  
 `22000081`: Monster ID  
 `9004`: How many to spawn  
+
+**/run add_event_state(9947, 20)**  
+(_adds Event buff with no time limit_)  
+`9947`: Buff ID  
+`20`: Buff level  
+
+---
