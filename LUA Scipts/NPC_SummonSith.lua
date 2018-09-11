@@ -4,7 +4,7 @@ return "SummonSith"
 end
 
 -- Start NPC
-function NPC_SummonSith() -- ( & ), again important, else it wont work!
+function NPC_SummonSith()
 dlg_title( "SummonSith" )
 dlg_text( "Spawn High Level Mobs! Be careful!." )
 dlg_menu( "Spawn Menu." , 'spawnMenu_function()')
