@@ -15,30 +15,41 @@ INSERT INTO [Auth].[dbo].[Account] ([account_id], [account], [password], [email]
 ---
 
 ### Adding field props
-add_field_prop( `60194`, 600, #@pos_x@# , #@pos_y@# , #@pos_layer@#, -10, 0, 0, 0, 1, 1, 1 )  
+**add_field_prop( `60194`, 600, #@pos_x@# , #@pos_y@# , #@pos_layer@#, -10, 0, 0, 0, 1, 1, 1 )**  
 `60194`: is the ID of the Frozen Witch Portal in the PW
 
 ---
 
 ### NPC Commands
-/run message(get_npc_id())  
+**/run message(get_npc_id())**  
 Open a dialog with a NPC and paste the command in the Chat to get the NPC ID
 
 ---
 
 ### Console Commands
-#sv("permission", "1", "name")  
+**#sv("permission", "1", "name")**  
 Paste this Command in the Gameserver Console to make the `name` a GM  
-_only work until the `name` logs out_  
+(_only work until the `name` logs out_)  
 `1`: Normal Player  
 `100`: GM  
+  
+**#add_state(9004,2,900000000,"CharName")**  
+`9004`: Buff ID  
+`2`: Buff level  
+`900000000`: Buff duration in seconds  
+`CharName`: Character name  
 
 ---
 
 ### Ingame GM commands
 _all typed into the gamechat_  
-/postion - gets the X and Y coordinates of your Character  
+**/postion**  
+(_gets the X and Y coordinates of your Character_)  
 
-/run warp(98935, 129317, "Name")	Labyrinth  
+**/run warp(98935, 129317, "Name")**	Labyrinth  
 Teleport "Name" to the Labyrinth  
-_for more warp locations see the Warp file_  
+(_for more warp locations see the Warp file_)  
+
+**//regenerate, 22000081,1**  
+`22000081`: Monster ID  
+`9004`: How many to spawn  
