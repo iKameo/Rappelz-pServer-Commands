@@ -4,7 +4,7 @@ return "CashCasper"
 end
 
 -- Start NPC
-function NPC_CashCasper() -- ( & ), again important, else it wont work!
+function NPC_CashCasper()
 dlg_title( "CashCasper" )
 dlg_text( "Hello, nice to meet you." )
 dlg_menu( "Hair", 'open_market("crushop_hair")' )
