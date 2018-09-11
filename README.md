@@ -47,6 +47,8 @@ _all typed into the gamechat_
 (_gets the X and Y coordinates of your Character_)  
 
 **/run warp(98935, 129317, "Name")**	Labyrinth  
+`98935`: X Postion  
+`129317`: Y Postion  
 Teleport "Name" to the Labyrinth  
 (_for more warp locations see the Warp file_)  
 
