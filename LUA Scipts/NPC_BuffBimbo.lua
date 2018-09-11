@@ -4,7 +4,7 @@ return "BuffBimbo"
 end
 
 -- Start NPC
-function NPC_BuffBimbo() -- ( & ), again important, else it wont work!
+function NPC_BuffBimbo()
 dlg_title( "BuffBimbo" )
 dlg_text( "Hello, nice to meet you." )
 dlg_menu( "Buffs for me." , 'buff_function()')
