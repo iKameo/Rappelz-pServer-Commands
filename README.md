@@ -13,3 +13,32 @@ INSERT INTO [Auth].[dbo].[Account] ([account_id], [account], [password], [email]
 `pwClear`: Password in plaint text e.g. 'rlysecurePW'  
 
 ---
+
+### Adding field props
+add_field_prop( `60194`, 600, #@pos_x@# , #@pos_y@# , #@pos_layer@#, -10, 0, 0, 0, 1, 1, 1 )
+`60194`: is the ID of the Frozen Witch Portal in the PW
+
+---
+
+### NPC Commands
+/run message(get_npc_id())
+Open a dialog with a NPC and paste the command in the Chat to get the NPC ID
+
+---
+
+### Console Commands
+#sv("permission", "1", "name")
+Paste this Command in the Gameserver Console to make the `name` a GM
+_only work until the `name` logs out_
+`1`: Normal Player
+`100`: GM
+
+---
+
+### Ingame GM commands
+_all typed into the gamechat_
+/postion - gets the X and Y coordinates of your Character
+
+/run warp(98935, 129317, "Name")	Labyrinth
+Teleport "Name" to the Labyrinth
+_for more warp locations see the Warp file_
